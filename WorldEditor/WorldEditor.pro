@@ -12,6 +12,7 @@ SOURCES += \
     camera3d.cpp \
     globject.cpp \
     main.cpp \
+    viewport3d.cpp \
     mainwindow.cpp
 
 HEADERS += \
@@ -19,6 +20,7 @@ HEADERS += \
     camera3d.h \
     globject.h \
     mainwindow.h \
+    viewport3d.h \
     view.h
 
 # Default rules for deployment.
