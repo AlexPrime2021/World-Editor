@@ -10,13 +10,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     camera.cpp \
     camera3d.cpp \
+    globject.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     camera.h \
     camera3d.h \
-    mainwindow.h
+    globject.h \
+    mainwindow.h \
+    view.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
