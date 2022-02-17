@@ -10,6 +10,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 include($$PWD/../GLGeometry/GLGeometry.pri)
 include($$PWD/../Camera3D/Camera3D.pri)
 include($$PWD/../Viewport3D/Viewport3D.pri)
+include($$PWD/../ContextNavigation3D/ContextNavigation3D.pri)
 
 SOURCES += \
     main.cpp \

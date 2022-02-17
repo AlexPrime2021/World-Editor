@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "camera3d.h"
 #include "viewport3d.h"
+#include "contextnavigation3d.h"
 #include "glgeometry.h"
 #include "vertexdata.h"
 
@@ -17,6 +18,7 @@ public:
 
 private:
     WorldEditor::Camera3D *m_camera = nullptr;
+    WorldEditor::ContextNavigation3D *m_context = nullptr;
     WorldEditor::Viewport3D *m_viewport = nullptr;
 
     void initCube(const float &edgeLength, QVector<WorldEditor::VertexData> &vertexes, QVector<int> &indices);
