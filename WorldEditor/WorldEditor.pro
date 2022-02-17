@@ -10,6 +10,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     camera.cpp \
     camera3d.cpp \
+    glgeometry.cpp \
     globject.cpp \
     main.cpp \
     viewport3d.cpp \
@@ -18,8 +19,10 @@ SOURCES += \
 HEADERS += \
     camera.h \
     camera3d.h \
+    glgeometry.h \
     globject.h \
     mainwindow.h \
+    vertexdata.h \
     viewport3d.h \
     view.h
 
@@ -27,3 +30,8 @@ HEADERS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    shaders.qrc
+
+DISTFILES +=
