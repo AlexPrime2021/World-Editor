@@ -7,31 +7,18 @@ CONFIG += c++17
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
+include($$PWD/../GLGeometry/GLGeometry.pri)
+include($$PWD/../Camera3D/Camera3D.pri)
+include($$PWD/../Viewport3D/Viewport3D.pri)
+
 SOURCES += \
-    camera.cpp \
-    camera3d.cpp \
-    glgeometry.cpp \
-    globject.cpp \
     main.cpp \
-    viewport3d.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    camera.h \
-    camera3d.h \
-    glgeometry.h \
-    globject.h \
-    mainwindow.h \
-    vertexdata.h \
-    viewport3d.h \
-    view.h
+    mainwindow.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES += \
-    shaders.qrc
-
-DISTFILES +=

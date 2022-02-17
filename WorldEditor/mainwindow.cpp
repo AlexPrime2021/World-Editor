@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     initCube(2.0f, vertices, indices);
 
     GLGeometry *geom = new GLGeometry(vertices, indices);
+    geom->setRotation(QVector3D(45.0f, 45.0f, 45.0f));
 
     m_viewport = new Viewport3D(m_camera);
     m_viewport->addObject(geom);
